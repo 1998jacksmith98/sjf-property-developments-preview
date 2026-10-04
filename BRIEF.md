@@ -30,6 +30,10 @@ Jack sent these ten photos. Use his originals. Notes:
 - `photos/kitchen-sage-green-finished.jpg` (1180×1572) — sage green shaker, marble-effect worktop, induction hob, built-in microwave and oven, undermount sink, wood-effect floor. Finished kitchen.
 - `photos/kitchen-white-before.jpg` (1180×1572) — dated white units, wood worktops, square floor tiles, cluttered. Before kitchen. Not confirmed as the same room as either finished kitchen.
 
+Jack supplied the scroll-scrub source clip. It is already encoded for scroll-scrub use. Do not re-encode.
+
+- `videos/scroll-scrub.mp4` — H.264, 1080×1920, 30fps, no audio, no B-frames, keyframe every 8 frames, ~7.0s, ~4.6 MB, faststart.
+
 No owner portrait was supplied. Profile image is the logo, not a person.
 
 ## Business details
