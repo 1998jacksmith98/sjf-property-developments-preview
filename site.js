@@ -12,23 +12,21 @@ nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
 const dock = document.getElementById('dock');
 new IntersectionObserver(([e]) => dock.classList.toggle('show', !e.isIntersecting), { threshold: 0.2 })
   .observe(document.querySelector('.hero'));
+
+const rises = document.querySelectorAll('.rise');
+rises.forEach((el, i) => {
+  el.style.transitionDelay = ((i % 4) * 0.08) + 's';
+});
 const io = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
-    if (!e.isIntersecting) return;
-    e.target.style.animationDelay = (i * 0.06) + 's';
-    e.target.classList.add('in');
-    io.unobserve(e.target);
-  });
-}, { threshold: 0.15 });
-document.querySelectorAll('.rise').forEach(el => io.observe(el));
+  entries.forEach((e) => e.target.classList.toggle('in', e.isIntersecting));
+}, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+rises.forEach(el => io.observe(el));
 
 const box = document.getElementById('compare-box');
 const before = document.getElementById('compare-before');
 const beforeImg = before.querySelector('img');
 const handle = document.getElementById('compare-handle');
-function fit() {
-  beforeImg.style.width = box.offsetWidth + 'px';
-}
+function fit() { beforeImg.style.width = box.offsetWidth + 'px'; }
 function setSplit(clientX) {
   const rect = box.getBoundingClientRect();
   const p = Math.min(0.96, Math.max(0.04, (clientX - rect.left) / rect.width));
@@ -38,17 +36,16 @@ function setSplit(clientX) {
 }
 fit();
 window.addEventListener('resize', fit);
-function pointer(e) { setSplit(e.clientX); }
 handle.addEventListener('pointerdown', (e) => {
   handle.setPointerCapture(e.pointerId);
-  pointer(e);
+  setSplit(e.clientX);
 });
 handle.addEventListener('pointermove', (e) => {
-  if (handle.hasPointerCapture(e.pointerId)) pointer(e);
+  if (handle.hasPointerCapture(e.pointerId)) setSplit(e.clientX);
 });
 box.addEventListener('pointerdown', (e) => {
   if (e.target === handle) return;
-  handle.setPointerCapture(e.pointerId);
+  box.setPointerCapture(e.pointerId);
   setSplit(e.clientX);
 });
 box.addEventListener('pointermove', (e) => {
