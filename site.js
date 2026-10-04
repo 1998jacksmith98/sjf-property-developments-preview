@@ -10,7 +10,14 @@ nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   btn.setAttribute('aria-expanded', 'false');
 }));
 const dock = document.getElementById('dock');
-const hero = document.querySelector('.hero');
-new IntersectionObserver(([e]) => {
-  dock.classList.toggle('show', !e.isIntersecting);
-}, { threshold: 0.15 }).observe(hero);
+new IntersectionObserver(([e]) => dock.classList.toggle('show', !e.isIntersecting), { threshold: 0.2 })
+  .observe(document.querySelector('.hero'));
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (!e.isIntersecting) return;
+    e.target.style.animationDelay = (i * 0.06) + 's';
+    e.target.classList.add('in');
+    io.unobserve(e.target);
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.rise').forEach(el => io.observe(el));

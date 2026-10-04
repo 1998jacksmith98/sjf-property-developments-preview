@@ -6,29 +6,21 @@
   <title>SJF Property Developments | Home improvements around Reading</title>
   <meta name="description" content="Sam Frost. Kitchens, bathrooms, flooring and gardens around Reading. WhatsApp or call for a free quote.">
   <link rel="icon" href="logo/logo-profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .preview-bar{position:sticky;top:0;z-index:70;background:#111;color:#fff;text-align:center;font:11px/1.3 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.12)}
-    .site-header{top:33px}
-    .mock{display:none}
-  </style>
 </head>
 <body>
   <p class="preview-bar">Preview mockup by Halfpenny Digital — not the live site yet</p>
-  <header class="site-header" id="site-header">
-    <a class="brand" href="#top">
-      <img src="logo/logo-profile.jpg" alt="SJF">
-      <span>SJF Property Developments</span>
-    </a>
+  <header class="site-header">
+    <a class="brand" href="#top"><img src="logo/logo-profile.jpg" alt="SJF"><span>SJF</span></a>
     <nav class="desk-nav">
       <a href="#work">Work</a>
       <a href="#services">What I do</a>
       <a href="#quote">Quote</a>
       <a href="https://www.instagram.com/sjfpropertydevelopments/" target="_blank" rel="noopener">Instagram</a>
     </nav>
-    <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </header>
   <nav class="mobile-nav" id="mobile-nav">
     <a href="#work">Work</a>
@@ -43,14 +35,16 @@
         <p class="eyebrow">Reading and the surrounding area</p>
         <h1>Kitchens, bathrooms and the rest of the house.</h1>
         <p>I’m Sam. I do the home improvements. Message me or call, and I’ll come and quote it.</p>
-        <div class="hero-ctas">
+        <div class="ctas">
           <a class="btn" href="https://wa.me/447847606178">WhatsApp</a>
-          <a class="btn btn-ghost" href="tel:07847606178">Call</a>
+          <a class="btn ghost" href="tel:07847606178">Call</a>
         </div>
       </div>
+      <p class="scroll-cue">Scroll<br>The work.</p>
     </section>
-    <section class="strip" id="services">
-      <h2 class="rise">What I do</h2>
+    <section class="block" id="services">
+      <p class="kicker rise">What I do</p>
+      <h2 class="rise">The jobs.</h2>
       <ul class="cards">
         <li class="rise">Kitchens</li>
         <li class="rise">Bathrooms</li>
@@ -61,9 +55,9 @@
       </ul>
       <p class="note rise">No set price list. Every job is different. The quote is free.</p>
     </section>
-    <section class="work" id="work">
-      <h2 class="rise">Recent jobs</h2>
-      <p class="lede rise">A few finished rooms. Kitchens, bathrooms, a garage floor.</p>
+    <section class="block" id="work">
+      <p class="kicker rise">Recent jobs</p>
+      <h2 class="rise">Finished rooms.</h2>
       <div class="grid">
         <figure class="rise"><img src="photos/kitchen-sage-green-finished.jpg" alt="Finished sage green kitchen"><figcaption>Kitchen</figcaption></figure>
         <figure class="rise"><img src="photos/bathroom-marble-walkin-shower.jpg" alt="Walk-in shower"><figcaption>Walk-in shower</figcaption></figure>
@@ -73,25 +67,27 @@
         <figure class="rise"><img src="photos/bathroom-wetroom-grey-tiles.jpg" alt="Grey tiled bathroom"><figcaption>Bathroom tiling</figcaption></figure>
       </div>
     </section>
-    <section class="about" id="about">
-      <div>
-        <h2 class="rise">How I work</h2>
-        <p class="rise">You tell me what you want done. I come and look, then send a quote. If you want to go ahead, I do the job and keep you posted.</p>
-        <p class="rise">Reading and the surrounding area. I have also worked in Warfield, Bracknell.</p>
-        <p class="rise">Kitchens, bathrooms, flooring, fencing, tiling, and the smaller jobs in between. If it is on the house, ask.</p>
-      </div>
+    <section class="block" id="how">
+      <p class="kicker rise">How I work</p>
+      <h2 class="rise">Three steps.</h2>
+      <ol class="steps">
+        <li class="rise"><span>1</span><h3>Message or call</h3><p>Tell me the job and the town. WhatsApp is the quickest.</p></li>
+        <li class="rise"><span>2</span><h3>I come and look</h3><p>I price it on site. The quote is free.</p></li>
+        <li class="rise"><span>3</span><h3>I do the job</h3><p>If you want to go ahead, I book it in and keep you posted.</p></li>
+      </ol>
+      <p class="note rise">Reading and the surrounding area. I have also worked in Warfield, Bracknell.</p>
     </section>
-    <section class="quote" id="quote">
-      <h2 class="rise">Free quote</h2>
-      <p class="rise">WhatsApp or a call. Tell me the job and the town.</p>
+    <section class="block quote" id="quote">
+      <p class="kicker rise">Free quote</p>
+      <h2 class="rise">WhatsApp is the front door.</h2>
       <p class="phone rise"><a href="tel:07847606178">07847 606178</a></p>
-      <div class="hero-ctas">
+      <div class="ctas">
         <a class="btn" href="https://wa.me/447847606178">WhatsApp</a>
-        <a class="btn btn-ghost" href="tel:07847606178">Call</a>
+        <a class="btn ghost" href="tel:07847606178">Call</a>
       </div>
     </section>
   </main>
-  <footer class="site-footer">
+  <footer>
     <a href="https://www.instagram.com/sjfpropertydevelopments/" target="_blank" rel="noopener">Instagram</a>
     <p>SJF Property Developments · Sam Frost · Reading</p>
     <p class="credit">Website built by <a href="https://halfpennydigital.co.uk/">Halfpenny Digital</a></p>
