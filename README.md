@@ -18,3 +18,7 @@ Facts for the site are in [BRIEF.md](BRIEF.md). This repo is the asset pack only
 - `photos/kitchen-grey-shaker-belfast.jpg`
 - `photos/kitchen-sage-green-finished.jpg`
 - `photos/kitchen-white-before.jpg`
+
+## Video
+
+- `videos/scroll-scrub.mp4`
