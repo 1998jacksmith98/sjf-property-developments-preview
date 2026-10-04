@@ -27,8 +27,8 @@ Jack sent these ten photos. Use his originals. Notes:
 - `photos/garden-patio-clearance.jpg` (1180×1572) — paved patio with tools, toolbox, rusty oil drum, wooden bench, tall timber fence and lawn. Reads as clearance / before, not a finished landscaping shot.
 - `photos/garden-lawn-red-fence.jpg` (1182×886) — lawn, red-stained fence panels, bird bath, brick house with patio doors, rusty drum and bench. Garden before or during.
 - `photos/kitchen-grey-shaker-belfast.jpg` (1182×886) — light grey shaker units, white metro splashback, gas hob, Belfast sink, stone-look floor. Pendant not hung and one socket still open. Nearly finished, not a hero finished shot.
-- `photos/kitchen-sage-green-finished.jpg` (1180×1572) — sage green shaker, marble-effect worktop, induction hob, built-in microwave and oven, undermount sink, wood-effect floor. Finished kitchen.
-- `photos/kitchen-white-before.jpg` (1180×1572) — dated white units, wood worktops, square floor tiles, cluttered. Before kitchen. Not confirmed as the same room as either finished kitchen.
+- `photos/kitchen-sage-green-finished.jpg` (1033×1572) — sage green shaker, marble-effect worktop, induction hob, built-in microwave and oven, undermount sink, wood-effect floor. Finished kitchen. Jack’s slightly cropped version of the same shot.
+- `photos/kitchen-white-before.jpg` (1122×1572) — dated white units, wood worktops, square floor tiles, cluttered. Before kitchen. Not confirmed as the same room as either finished kitchen. Jack’s slightly cropped version of the same shot.
 
 Jack supplied the scroll-scrub source clip. It is already encoded for scroll-scrub use. Do not re-encode.
 
