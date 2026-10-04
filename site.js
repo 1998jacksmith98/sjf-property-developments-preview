@@ -24,17 +24,21 @@ document.querySelectorAll('.rise').forEach(el => io.observe(el));
 
 const box = document.getElementById('compare-box');
 const before = document.getElementById('compare-before');
+const beforeImg = before.querySelector('img');
 const handle = document.getElementById('compare-handle');
+function fit() {
+  beforeImg.style.width = box.offsetWidth + 'px';
+}
 function setSplit(clientX) {
   const rect = box.getBoundingClientRect();
-  const p = Math.min(0.92, Math.max(0.08, (clientX - rect.left) / rect.width));
+  const p = Math.min(0.96, Math.max(0.04, (clientX - rect.left) / rect.width));
   const pct = (p * 100) + '%';
   before.style.width = pct;
   handle.style.left = pct;
 }
-function pointer(e) {
-  setSplit(e.clientX);
-}
+fit();
+window.addEventListener('resize', fit);
+function pointer(e) { setSplit(e.clientX); }
 handle.addEventListener('pointerdown', (e) => {
   handle.setPointerCapture(e.pointerId);
   pointer(e);
@@ -44,5 +48,9 @@ handle.addEventListener('pointermove', (e) => {
 });
 box.addEventListener('pointerdown', (e) => {
   if (e.target === handle) return;
+  handle.setPointerCapture(e.pointerId);
   setSplit(e.clientX);
+});
+box.addEventListener('pointermove', (e) => {
+  if (box.hasPointerCapture(e.pointerId)) setSplit(e.clientX);
 });
