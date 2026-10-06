@@ -1,4 +1,4 @@
 .hero-copy{font-family:Outfit,system-ui,sans-serif}
-.hero .eyebrow,.hero-copy > p,.hero h1{font-family:Outfit,system-ui,sans-serif;text-shadow:0 0 10px rgba(228,91,147,.95),0 0 22px rgba(228,91,147,.7);-webkit-text-stroke:0;paint-order:normal}
-.hero .eyebrow,.hero-copy > p{color:var(--pink)}
-.hero h1{color:#fff;font-weight:700;letter-spacing:-0.03em}
+.hero .eyebrow,.hero-copy > p,.hero h1{font-family:Outfit,system-ui,sans-serif;text-shadow:0 0 10px rgba(228,91,147,.95),0 0 22px rgba(228,91,147,.7) !important;-webkit-text-stroke:0 !important;paint-order:normal}
+.hero .eyebrow,.hero-copy > p{color:var(--pink) !important}
+.hero h1{color:#fff !important;font-weight:700;letter-spacing:-0.03em}
