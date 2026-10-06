@@ -1,0 +1,1 @@
+  <link rel="stylesheet" href="hero-type.css?v=white">
