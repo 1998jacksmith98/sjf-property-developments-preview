@@ -1,1 +1,1 @@
-        <h1 style="color:#fff">All aspects of home improvements covered</h1>
+  <link rel="stylesheet" href="hero-type.css?v=vibeswhite">
